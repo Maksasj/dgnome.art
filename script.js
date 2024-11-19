@@ -17,37 +17,69 @@ const button = (props, text) => {
 
 const div = (...childs) => {
     element = document.createElement("div");
+
+    const render = () => {
+        const clearDom = () => {
+            let child = element.lastElementChild;
+            while (child) {
+                element.removeChild(child);
+                child = element.lastElementChild;
+            }
+        }
+
+        clearDom();
+
+        for (let i = 0; i < childs.length; i++) {
+            child = childs[i]
+
+            if(child != null && child.constructor === Object) {
+                element.innerText = child.value;
+                
+                if(Object.hasOwn(child, "listeners"))
+                    child.listeners.push(render)
+            } else {
+                element.append(child);
+            }
+        }
+    }
     
-    for(const child of childs)
-        element.appendChild(child)
+    render();
 
     return element
 }
 
 const create_state = initialValue => {
-    const value = {
+    const proto = {
         value: initialValue,
+        listeners: []
     };
 
-    const state = new Proxy(value, {
+    const state = new Proxy(proto, {
         get(target, prop, receiver) {
-            console.log(receiver);
             return Reflect.get(...arguments);
         },
     
-        set(obj, prop, value) {
+        set(target, property, value, receiver) {
+            if(property === "value") {
+                receiver.listeners[0]();
+
+                // for (let i = 0; i < receiver.listeners.length; i++) {
+                    // receiver.listeners[i]();
+                // }
+            }
+            
             return Reflect.set(...arguments);
         }
     });
 
-    return value;
+    return state;
 }
 
 const App = () => {
     state = create_state(0);
 
     return div(
-        p("This is a test paragraph"),
+        state,
         button({onclick: () => ++state.value }, "This is a button")
     );
 }
