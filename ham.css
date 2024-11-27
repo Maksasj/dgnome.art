@@ -1,0 +1,76 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+position: relative;
+}
+
+.hamburger {
+position: absolute;
+top: 20px;
+left: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 22px;
+cursor: pointer;
+z-index: 10; /* Keep above everything else */
+}
+
+
+
+.line {
+height: 4px;
+background-color: #333;
+border-radius: 2px;
+width: 100%;
+}
+  
+  /* Overlay menu styles */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9; /* Above content, below hamburger */
+}
+  
+.menu-overlay ul {
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+.menu-overlay li {
+margin: 20px 0;
+}
+
+.menu-overlay a {
+text-decoration: none;
+color: white;
+font-size: 24px;
+font-weight: bold;
+}
+
+/* Dimmed background */
+.content.dimmed {
+filter: brightness(50%);
+}
+
+.content {
+padding: 50px;
+text-align: center;
+}
+  

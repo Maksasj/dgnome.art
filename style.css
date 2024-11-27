@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --background-color: #202020;
+    --background-color: #171717;
     --font-color: #fff;
-    --secondary-color: rgba(0, 0, 0, 0.14);
+    --secondary-color: #212121;
+    --accent-color: #B4B4B4;
+}   
+
+.article-paragraph {
+    color: var(--font-color);
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 body {
@@ -17,30 +22,28 @@ body {
 
 #container {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
+    justify-content: center;
+
+}
+
+#page {
+    max-width: 800px;
 }
 
 #navigation {
     display: flex;
-
-    flex-direction: column;
     align-items: center;
-    
-    min-width: 150px;
-    margin: 0 auto;
-    
-    padding: 10px;
-
-    border-radius: 15px;
-
-    background: var(--secondary-color);
 }
 
-#nav-link {
-    text-decoration: none; 
-    color: white;
+#nav-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 #content-base {
@@ -50,7 +53,7 @@ body {
 
 #content-header {
     background: url(images/bg.png) center / cover no-repeat;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,26 +73,10 @@ body {
 }
 
 #content {
-    max-width: 750px;
+    max-width: 800px;
+    padding: 50px;
+
     margin: 0 auto;
-
-    padding: 20px;
-}
-
-@media (max-width: 1000px) {
-    #container {
-        flex-direction: column;
-        max-width: none;
-    }
-
-    #navigation {
-        flex-direction: row;
-        min-width: none;
-    }
-    
-    #navigation, #content {
-        max-width: none;
-    }
 }
 
 .profile-picture {
@@ -99,20 +86,146 @@ body {
 
 #footer {
     text-align: center;
-    
+
     padding: 10px;
     border-radius: 15px;
     background: var(--secondary-color);
-    max-width: 950px;
+    max-width: 750%;
     margin: 0 auto;
 }
 
-#column_container {
+#column-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+
+    gap: 10px;
 }
 
 #column {
-    flex: 1;
-    min-width: 300px;
+    width: 50%;
+}
+
+hr {
+    border-bottom: 1px solid var(--accent-color);
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.line {
+    height: 4px;
+    background-color: var(--font-color);
+    border-radius: 2px;
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+
+    z-index: 9;
+    min-width: 250px;
+}
+
+.page-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-overlay li {
+    margin: 20px 0;
+}
+
+.menu-overlay a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+p {
+    line-height: 1.8;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.big-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.image-lore {
+    padding-top: 8px;
+    color: var(--accent-color);
+}
+
+.big-image {
+    border-radius: 16px;
+    width: 70%;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    #content {
+        padding: 12px;
+    }
+
+    #column-container {
+        flex-direction: column;
+    }
+
+    #column {
+        width: 100%;
+    }
+    
+    #navigation {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .big-image {
+        width: 100%;
+    }
+}
+
+#logo {
+    display: flex;
 }
