@@ -6,97 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>/dgnome.art</title>
 </head>
 
 <body>
-    <div class="container">
-		<header class="nav-header">
-			<a href="index.html" class="nav-logo">/dgnome.art</a>
-			<nav>
-				<ul>
-					<li><a class="nav-link" href="index.html">Home</a></li>
-					<li><a class="nav-link" href="tutorials.html">Tutorials</a></li>
-					<li><a class="nav-link" href="articles.html">Articles</a></li>
-					<li><a class="nav-link" href="links.html">Links</a></li>
-				</ul>
-			</nav>
-		</header>
-        <div class="block-header">
-            <div class="info">
-                <h1 class="title">Title</h1>
-                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequatur
-                    cupiditate incidunt cumque illo alias, odit dolorem et reprehenderit.</p>
+    <div id="container">
+        <div id="page">
+            <div id="header">
+                <div id="logo">
+                    <h2>/dgnome.art</h2>
+                </div>
+                <div id="navigation">
+                    <ul id="nav-ul">
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="tutorials.html">Tutorials</a></li>
+                        <li><a class="nav-link" href="article.html">Articles</a></li>
+                        <li><a class="nav-link" href="links.html">Links</a></li>
+                    </ul>
+                </div>
+
+                <div class="hamburger">
+                    <img style="height: 32px;" src="assets/svg/menu.svg" onclick="toggleMenu()">
+                </div>
             </div>
+
+            <div id="menu">
+                <div class="page-overlay"></div>
+                <div class="menu-overlay">
+                    <div class="menu-overlay-header">
+                        <img style="height: 32px;" src="assets/svg/close.svg" onclick="toggleMenu()">
+                    </div>
+                    <div class="menu-overlay-content">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                            <li><a href="article.html">Articles</a></li>
+                            <li><a href="links.html">Links</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-base">
+                <div id="content-header">
+                    <h1 id="title">Title</h1>
+                    <p id="title-lore">Some random text, basicall little lore</p>
+                </div>
+
+                <div class="details">
+                    <div class="item">
+                        <span class="item-header">Posted November 28, 2024</span>
+                    </div> 
+
+                    <div class="item">
+                        <span class="item-header">Modified November 28, 2024</span>
+                    </div> 
+                </div>
+                
+                <div id="content">
+                    <main>
+                        <h4>This is a header</h4>
+                        <p>
+                            In the 21st century, technology has become an integral part of daily life, revolutionizing
+                            the way we communicate, work, learn, and live. Its pervasive influence has touched every
+                            aspect of modern society, from healthcare and education to commerce and entertainment. While
+                            it has brought immense benefits, it also poses significant challenges, including ethical
+                            dilemmas, privacy concerns, and social inequality. This essay explores the multifaceted
+                            impact of technology on society, examining its benefits and drawbacks in key areas.
+                        </p>
+                    </main>
+                </div>
+            </div>
+
+            <footer id="footer">
+                This is a test footer
+            </footer>
         </div>
-        <section class="details">
-            <div class="item">
-                <h5 class="item-title">Publish Date</h5>
-                <p class="item-text"><span class="item-data">May 27, 2023</span></p>
-            </div>
-
-			<div class="item">
-                <h5 class="item-title">Topics</h5>
-                <p class="item-text"><span class="item-data">Some</span></p>
-                <div class="tag" style="background-color: coral">🎬 Animation</div>
-                <div class="tag" style="background-color: cornflowerblue;">🎨 Drawing</div>
-            </div>
-        </section>
-        <article>
-            <h4>This is a test article title</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>At cupiditate deleniti voluptas dolor, non optio
-                vitae reiciendis</b>, eveniet ullam suscipit <i>harum velit esse provident id! Dolore culpa omnis<i> ullam! Atque?
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquam quasi deleniti molestias
-                consequatur veniam nobis porro perferendis ex quae enim nesciunt, laborum odit quo tenetur velit
-                corrupti odio facere.</p>
-
-            <div class="single-image">
-                <img class="image-showcase" src="images/test0.png" alt="Test image">
-                <p class="image-lore">This is a test image</p>
-            </div>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At exercitationem labore et omnis quod, sit
-                corporis beatae deleniti est totam vel eos, molestiae velit laudantium quam culpa ad ipsa ipsam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum aspernatur provident reiciendis
-                neque nobis, esse veritatis, dolore consequuntur odit aliquid laboriosam quo eveniet facere. Minima sit
-                nobis architecto quos?</p>
-
-            <div class="double-image">
-                <div class="single-image">
-                    <img class="image-showcase" src="images/test0.png" alt="Test image">
-                    <p class="image-lore">This is a test image</p>
-                </div>
-                <div class="single-image">
-                    <img class="image-showcase" src="images/test1.png" alt="Test image">
-                    <p class="image-lore">This is a test image</p>
-                </div>
-            </div>
-
-			<h4>And another</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, sint. Eveniet ex labore possimus minima
-                adipisci quasi sint ab voluptatibus, enim aliquid repudiandae magnam. Error harum distinctio sint iste
-                eos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eos dicta facilis, fugit, ducimus
-                unde magni sit numquam omnis dolorem magnam debitis tempore aliquid esse quod laboriosam laudantium
-                voluptate ad?</p>
-            <h4>Title !</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, sint. Eveniet ex labore possimus minima
-                adipisci quasi sint ab voluptatibus, enim aliquid repudiandae magnam. Error harum distinctio sint iste
-                eos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident voluptatibus reiciendis
-                quae, voluptatem ut, tenetur, vel eligendi porro commodi dolore quam autem. Sint beatae repellat
-                voluptates dolorem quia dolore?</p>
-            <blockquote>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nam odio iste unde laboriosam. Modi
-                dolorum ipsum aliquid labore minus fuga exercitationem sunt enim! Amet quaerat vero minima ea assumenda.
-            </blockquote>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nam odio iste unde laboriosam. Modi
-                dolorum ipsum aliquid labore minus fuga exercitationem sunt enim! Amet quaerat vero minima ea assumenda.
-            </p>
-        </article>
     </div>
-
-</body>
 
 </html>

@@ -49,6 +49,7 @@ body {
 #content-base {
     background: var(--secondary-color);
     border-radius: 15px;
+    padding-bottom: 10px;
 }
 
 #content-header {
@@ -74,7 +75,7 @@ body {
 
 #content {
     max-width: 800px;
-    padding: 50px;
+    padding: 12px 50px;
 
     margin: 0 auto;
 }
@@ -91,7 +92,9 @@ body {
     border-radius: 15px;
     background: var(--secondary-color);
     max-width: 750%;
+
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 #column-container {
@@ -107,7 +110,7 @@ body {
 
 hr {
     border-bottom: 1px solid var(--accent-color);
-
+    
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -140,6 +143,18 @@ hr {
 
     z-index: 9;
     min-width: 250px;
+}
+
+.menu-overlay-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+    max-height: 200px;
+}
+
+.menu-overlay-content {
+
 }
 
 .page-overlay {
@@ -199,7 +214,7 @@ h4 {
 
 @media (max-width: 750px) {
     #content {
-        padding: 12px;
+        padding: 18px 12px;
     }
 
     #column-container {
@@ -220,12 +235,70 @@ h4 {
     }
 }
 
+#logo {
+    display: flex;
+}
+
+blockquote {
+    background-color: var(--background-color);
+
+    padding: 0px 24px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.card {
+    background-color: var(--background-color);
+
+    padding: 0px 24px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 50px 0px 50px;
+}
+
+.item-header {
+    margin: 10px 0px;
+    color: var(--accent-color);
+}
+
+.item {
+    display: flex;
+}
+
+.item-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.tag {
+    border-radius: 16px;
+    color: black;
+}
+
 @media (max-width: 500px) {
     .big-image {
         width: 100%;
     }
-}
 
-#logo {
-    display: flex;
+    blockquote {
+        margin: 10px 0px;
+    }
+
+    .details {
+        padding: 0px 12px;
+    }
 }
