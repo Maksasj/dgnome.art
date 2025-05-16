@@ -1,0 +1,88 @@
+{
+    "generations": [
+        {
+            "riuvs": [
+                {
+                    "name": "riuvloves",
+                    "icon": "assets/riuvdex/riuvloves.gif"
+                },
+                {
+                    "name": "riuvrot",
+                    "icon": "assets/riuvdex/riuvrot.png"
+                },
+                {
+                    "name": "riuvsadalt",
+                    "icon": "assets/riuvdex/riuvsadalt.png"
+                },
+                {
+                    "name": "riuvsup",
+                    "icon": "assets/riuvdex/riuvsup.png"
+                },
+                {
+                    "name": "riuvthink",
+                    "icon": "assets/riuvdex/riuvthink.gif"
+                },
+                {
+                    "name": "riuvanguish",
+                    "icon": "assets/riuvdex/riuvanguish.png"
+                },
+                {
+                    "name": "riuvmad",
+                    "icon": "assets/riuvdex/riuvmad.png"
+                },
+                {
+                    "name": "riuvshock",
+                    "icon": "assets/riuvdex/riuvshock.png"
+                },
+                {
+                    "name": "riuvsorry",
+                    "icon": "assets/riuvdex/riuvsorry.png"
+                },
+                {
+                    "name": "riuvwoozy",
+                    "icon": "assets/riuvdex/riuvwoozy.png"
+                },
+                {
+                    "name": "riuvclown",
+                    "icon": "assets/riuvdex/riuvclown.png"
+                },
+                {
+                    "name": "lunburger",
+                    "icon": "assets/riuvdex/lunburger.png"
+                },
+                {
+                    "name": "riuvcry",
+                    "icon": "assets/riuvdex/riuvcry.png"
+                },
+                {
+                    "name": "riuvchibi",
+                    "icon": "assets/riuvdex/riuvchibi.png"
+                },
+                {
+                    "name": "riuvbonk",
+                    "icon": "assets/riuvdex/riuvbonk.gif"
+                },
+                {
+                    "name": "riuvstare",
+                    "icon": "assets/riuvdex/riuvstare.png"
+                },
+                {
+                    "name": "riuvfeet",
+                    "icon": "assets/riuvdex/riuvfeet.png"
+                }
+            ]
+        },
+        {
+            "riuvs": [
+                {
+                    "name": "riuvnier",
+                    "icon": "assets/riuvdex/riuvnier.png"
+                },
+                {
+                    "name": "riuvsuperstare",
+                    "icon": "assets/riuvdex/riuvsuperstare.png"
+                }
+            ]
+        }
+    ]    
+}

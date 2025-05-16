@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>riuvdex</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .riuvdex-card-container {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .riuvdex-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 750px) {
+            .content {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        async function startApplication() {
+            var riuvdex_data = {};
+
+            fetch("./riuvdex.json")
+                .then((response) => response.json())
+                .then((json) => riuvdex_data = json)
+                .then(() => {
+                    renderCards("riuvdex-card-container-gen-1", 0);
+                    renderCards("riuvdex-card-container-gen-2", 1);
+                });
+
+            function renderCards(container, generation) {
+                var container = document.getElementById(container);
+                    
+                for(let i = 0; i < riuvdex_data["generations"][generation]["riuvs"].length; ++i) {
+
+                    let card_data = riuvdex_data["generations"][generation]["riuvs"][i];
+
+                    const node = document.createElement("div");
+                    node.className = "riuvdex-card";
+                    node.innerHTML = "<span>" + card_data.name + "</span>" + "<img src=\"" + card_data.icon + "\">";
+                    container.appendChild(node);
+                }
+            }
+        }
+
+        startApplication()
+    </script>
+</head>
+
+<body>
+
+<div class="content">
+    <div class="header">
+        <h1>RIUVDEX</h1>
+        <span>This is riuvdex !<span>
+    </div>
+    
+    <h2>Generation I</h2>
+    <div class="riuvdex-card-container" id="riuvdex-card-container-gen-1">
+
+        <div class="riuvdex-card">
+            <span>riuvrot</span>
+            <img src="assets/riuvdex/riuvrot.png">
+        </div>
+    </div>
+
+    <h2>Generation II</h2>
+    <div class="riuvdex-card-container" id="riuvdex-card-container-gen-2">
+    </div>
+</div>
+
+</body>
+
+</html>
