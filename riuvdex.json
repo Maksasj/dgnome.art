@@ -69,6 +69,18 @@
                 {
                     "name": "riuvfeet",
                     "icon": "assets/riuvdex/riuvfeet.png"
+                },
+                {
+                    "name": "riuvwide1",
+                    "icon": "assets/riuvdex/riuvwide1.png"
+                },
+                {
+                    "name": "riuvwide2",
+                    "icon": "assets/riuvdex/riuvwide2.png"
+                },
+                {
+                    "name": "riuvwide3",
+                    "icon": "assets/riuvdex/riuvwide3.png"
                 }
             ]
         },
