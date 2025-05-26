@@ -93,6 +93,10 @@
                 {
                     "name": "riuvsuperstare",
                     "icon": "assets/riuvdex/riuvsuperstare.png"
+                },
+                {
+                    "name": "riuvbigbrain",
+                    "icon": "assets/riuvdex/riuvbigbrain.png"
                 }
             ]
         }
