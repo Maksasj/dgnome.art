@@ -97,6 +97,10 @@
                 {
                     "name": "riuvbigbrain",
                     "icon": "assets/riuvdex/riuvbigbrain.png"
+                },
+                {
+                    "name": "riuvfeetanim",
+                    "icon": "assets/riuvdex/riuvfeetanim.gif"
                 }
             ]
         }
