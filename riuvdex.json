@@ -81,6 +81,22 @@
                 {
                     "name": "riuvwide3",
                     "icon": "assets/riuvdex/riuvwide3.png"
+                },
+                {
+                    "name": "riuvsleep",
+                    "icon": "assets/riuvdex/riuvsleep.png"
+                },
+                {
+                    "name": "riuvpat",
+                    "icon": "assets/riuvdex/riuvpat.png"
+                },
+                {
+                    "name": "riuvlaugh",
+                    "icon": "assets/riuvdex/riuvlaugh.png"
+                },
+                {
+                    "name": "riuvembarrassed",
+                    "icon": "assets/riuvdex/riuvembarrassed.png"
                 }
             ]
         },
@@ -101,6 +117,14 @@
                 {
                     "name": "riuvfeetanim",
                     "icon": "assets/riuvdex/riuvfeetanim.gif"
+                }
+            ]
+        },
+        {
+            "riuvs": [
+                {
+                    "name": "riuvgigastare",
+                    "icon": "assets/riuvdex/riuvgigastare.png"
                 }
             ]
         }
