@@ -117,6 +117,10 @@
                 {
                     "name": "riuvfeetanim",
                     "icon": "assets/riuvdex/riuvfeetanim.gif"
+                },
+                {
+                    "name": "riuvtarnished",
+                    "icon": "assets/riuvdex/riuvtarnished.png"
                 }
             ]
         },
