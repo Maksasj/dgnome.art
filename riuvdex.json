@@ -97,6 +97,26 @@
                 {
                     "name": "riuvembarrassed",
                     "icon": "assets/riuvdex/riuvembarrassed.png"
+                },
+                {
+                    "name": "riuvshug",
+                    "icon": "assets/riuvdex/riuvshug.png"
+                },
+                {
+                    "name": "riuvshrug",
+                    "icon": "assets/riuvdex/riuvshrug.png"
+                },
+                {
+                    "name": "riuvquestion",
+                    "icon": "assets/riuvdex/riuvquestion.png"
+                },
+                {
+                    "name": "riuvpeek",
+                    "icon": "assets/riuvdex/riuvpeek.png"
+                },
+                {
+                    "name": "riuvcomfy",
+                    "icon": "assets/riuvdex/riuvcomfy.png"
                 }
             ]
         },
