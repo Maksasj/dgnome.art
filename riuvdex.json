@@ -141,6 +141,14 @@
                 {
                     "name": "riuvtarnished",
                     "icon": "assets/riuvdex/riuvtarnished.png"
+                },
+                {
+                    "name": "riuvfat",
+                    "icon": "assets/riuvdex/riuvfat.png"
+                },
+                {
+                    "name": "riuvperto",
+                    "icon": "assets/riuvdex/riuvperto.png"
                 }
             ]
         },
