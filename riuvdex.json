@@ -157,6 +157,10 @@
                 {
                     "name": "riuvgigastare",
                     "icon": "assets/riuvdex/riuvgigastare.png"
+                },
+                                {
+                    "name": "riuvsuperstareanim",
+                    "icon": "assets/riuvdex/riuvsuperstareanim.gif"
                 }
             ]
         }
